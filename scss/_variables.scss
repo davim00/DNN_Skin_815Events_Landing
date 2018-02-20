@@ -1,0 +1,171 @@
+// Variables
+
+$white:    #fff !default;
+$gray-100: #F6F5FA !default;
+$gray-200: #EAE6E1 !default;
+$gray-300: #DDD8C9 !default;
+$gray-400: #D1C9B0 !default;
+$gray-500: #B0AB99 !default;
+$gray-600: #8F8C82 !default;
+$gray-700: #61605A !default;
+$gray-800: #333333 !default;
+$gray-900: #252529 !default;
+$black:    #000 !default;
+
+$grays: () !default;
+$grays: map-merge((
+  "100": $gray-100,
+  "200": $gray-200,
+  "300": $gray-300,
+  "400": $gray-400,
+  "500": $gray-500,
+  "600": $gray-600,
+  "700": $gray-700,
+  "800": $gray-800,
+  "900": $gray-900
+), $grays);
+
+$blue:    #869AB2   !default;
+$orange:  #D94C00   !default;
+$yellow:  #E5BB47   !default;
+$gold:    #BFAA78   !default;
+$tan:     $gray-400 !default;
+
+
+$colors: () !default;
+$colors: map-merge((
+  "blue":       $blue,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "gold":       $gold,
+  "tan":        $tan,
+  "white":      $white,
+  "gray":       $gray-600,
+  "gray-dark":  $gray-900
+), $colors);
+
+$primary:       $gold !default;
+$secondary:     $gray-400 !default;
+$success:       $blue !default;
+$info:          $gray-600 !default;
+$warning:       $yellow !default;
+$danger:        $orange !default;
+$light:         $gray-100 !default;
+$dark:          $gray-900 !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge((
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+), $theme-colors);
+
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+// stylelint-disable
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge((
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3)
+), $spacers);
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: () !default;
+$sizes: map-merge((
+  25: 25%,
+  50: 50%,
+  75: 75%,
+  100: 100%
+), $sizes);
+// stylelint-enable
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-color:                $gray-700 !default;
+
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      Metropolis, Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-serif:           Crimson, "Palatino Linotype", Georgia, Times, "Times New Roman", serif !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:            $font-family-serif !default;
+// stylelint-enable value-keyword-case
+
+$font-size-base:              1.125rem !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                ($font-size-base * 1.25) !default;
+$font-size-sm:                ($font-size-base * .875) !default;
+
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+
+$font-weight-base:            $font-weight-normal !default;
+$line-height-base:            1.5 !default;
+
+$h1-font-size:                $font-size-base * 1.67 !default;
+$h2-font-size:                $font-size-base * 1.44 !default;
+$h3-font-size:                $font-size-base * 1.22 !default;
+$h4-font-size:                $font-size-base * 1.11 !default;
+$h5-font-size:                $font-size-base * 1.05 !default;
+$h6-font-size:                $font-size-base !default;
+
+$headings-margin-bottom:      ($spacer / 2) !default;
+$headings-font-family:        $font-family-sans-serif !default;
+$headings-font-weight:        bold !default;
+$headings-line-height:        1.2 !default;
+$headings-color:              inherit !default;
+
+$display1-size:               6rem !default;
+$display2-size:               5.5rem !default;
+$display3-size:               4.5rem !default;
+$display4-size:               3.5rem !default;
+
+$display1-weight:             300 !default;
+$display2-weight:             300 !default;
+$display3-weight:             300 !default;
+$display4-weight:             300 !default;
+$display-line-height:         $headings-line-height !default;
+
+$lead-font-size:              ($font-size-base * 1.5) !default;
+$lead-font-weight:            300 !default;
+
+$small-font-size:             80% !default;
+
+$text-muted:                  $gray-600 !default;
+
+$blockquote-small-color:      $gray-600 !default;
+$blockquote-font-size:        ($font-size-base * 1.25) !default;
+
+$mark-padding:                .2em !default;
+
+$dt-font-weight:              $font-weight-bold !default;
+
+$kbd-box-shadow:              inset 0 -.1rem 0 rgba($black, .25) !default;
+$nested-kbd-font-weight:      $font-weight-bold !default;
+
+$list-inline-padding:         .5rem !default;
+
+$mark-bg:                     #fcf8e3 !default;
+
+$hr-margin-y:                 $spacer !default;
