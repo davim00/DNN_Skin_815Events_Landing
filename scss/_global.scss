@@ -53,6 +53,9 @@ h2 {
 h3 {
   font-size: $h3-font-size;
 }
+#services h3 {
+  font-size: ($h3-font-size * 1.2);
+}
 
 h4 {
   font-size: $h4-font-size;
@@ -136,4 +139,7 @@ img::-moz-selection {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: .04em;
+}
+.service-icon {
+  width: 138px;
 }
